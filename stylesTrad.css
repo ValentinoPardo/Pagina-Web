@@ -1,0 +1,49 @@
+
+header{
+    display: flex;
+    height: 100px;
+    border-bottom: 2px solid #4a3558;
+    justify-content:left;
+    align-items:center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    margin-right: 30px;
+    height: 100px;    
+    margin-bottom: 10px;
+}
+nav a{
+    display:inline-flex;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: Fear ;
+    color: #4a3558;
+}
+nav a:hover{
+    color: #c36aff;
+    transition: 1s;
+}
+body { 
+    background: linear-gradient(rgba(4, 1, 14, 0.91) 60%,
+        rgb(25, 14, 31));
+        background-repeat: no-repeat;
+        height: 100%;
+        margin: 0;
+        background-attachment: fixed;
+}
+@font-face {
+    font-family: 'Fear';
+    src:url(fonts/OzsWizard-Scarecrow.ttf);
+    font-weight:  900;
+}
+@font-face{
+    font-family: 'Fear2';
+    src:url(fonts/Eczar-VariableFont_wght.ttf);
+    font-weight: 100;
+    font-style:normal;
+
+}

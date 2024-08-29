@@ -1,0 +1,143 @@
+
+header{
+    display: flex;
+    height: 100px;
+    border-bottom: 2px solid #4a3558;
+    justify-content:left;
+    align-items:center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    margin-right: 30px;
+    height: 100px;    
+    margin-bottom: 10px;
+}
+nav a{
+    display:inline-flex;
+    padding-right: 20px;
+}
+nav a:hover{
+    color: #c36aff;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+    font-family: Fear_bold ;
+    color: #4a3558;   
+}
+body { 
+    background-color: #261b24;
+}
+.card_centrar{
+    align-items:center;
+    justify-content:center;
+    display: flex;
+}
+.card{
+    display:inline-block;
+    justify-content: center;
+    box-shadow: 0px 0px 25px #0007;
+    width: 300px;
+    margin: 20px;
+    border: 3px solid #4a3558;
+}
+.digitales{
+    background: linear-gradient(rgba(2, 255, 74, 0), rgba(243, 243, 243, 0));
+    text-align: center;
+    width: 300px;
+}
+.card_digitales_titulo{
+    font-family: Future;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+.card_digitales_desc{
+    font-family: Fear2;
+    font-size: 13;
+    color: aliceblue;
+    font-weight: 100;
+}
+.card_digitales_img{
+    width: 300px;
+}
+
+.tradicional{
+    background: linear-gradient(rgba(255, 0, 191, 0), rgba(243, 243, 243, 0));
+    text-align: center;
+    width: 300px;
+}
+.card_tradicional_titulo{
+    font-family: Fear;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    margin-top: 80px;
+}
+.card_tradicional_desc{
+    font-family: Fear2;
+    font-size: 13;
+    color: aliceblue;
+    font-weight: 100;
+}
+.card_tradicional_img{
+    width: 300px;
+}
+
+
+.grabado{
+    background: linear-gradient(rgba(133, 64, 4, 0), rgba(243, 243, 243, 0));
+    text-align: center;
+    width: 300px;
+
+}
+.card_grabado_titulo{
+    font-family: Fear;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 70px;
+}
+.card_grabado_desc{
+    font-family: Fear2;
+    font-size: 13;
+    color: aliceblue;
+    font-weight: 100;
+}
+.card_grabado_img{
+    width: 300px;
+}
+
+.pie-pag{
+    justify-content:center;
+    align-items:center;
+    display: flex;
+}
+.pie-pag-img{
+    width: 200px;
+}
+
+@font-face {
+    font-family: 'Fear';
+    src:url(fonts/OzsWizard-Scarecrow.ttf);
+    font-weight:  900;
+}
+@font-face{
+    font-family: 'Fear_bold';
+    src: url(fonts/OzsWizard-Scarecrow.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'Fear2';
+    src:url(fonts/Eczar-VariableFont_wght.ttf);
+    font-weight: 100;
+    font-style:normal;
+
+}
+@font-face{
+    font-family: 'Future';
+    src:url(fonts/FashionWacks-Regular.ttf);
+    font-weight: 900;
+    font-style:normal;
+}

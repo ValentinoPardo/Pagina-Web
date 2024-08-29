@@ -1,0 +1,139 @@
+
+header{
+    display: flex;
+    height: 100px;
+    border-bottom: 2px solid #5650a7;
+    justify-content:left;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Fear ;
+    
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    margin-right: 30px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+nav a{
+    display:inline-flex;
+    padding-right: 20px;
+}
+nav a:hover{
+    color: #4f42ff;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+    color: #4f4c80;   
+}
+
+body { 
+    background-color: rgb(26, 19, 45);
+}
+@font-face {
+    font-family: 'Fear';
+    src:url(fonts/OzsWizard-Scarecrow.ttf);
+    font-weight:  500;
+}
+@font-face{
+    font-family: 'Fear2';
+    src:url(fonts/Eczar-VariableFont_wght.ttf);
+    font-weight: 100;
+    font-style:normal;
+
+}
+
+.cv{
+    justify-content:center;
+    display: flex;
+}
+.cv_img{
+    width: 500px;
+    margin: 30px;
+    border: 5px solid #3d427f;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.644);
+}
+
+.influencias{
+    padding: 60px 50% 60px 36%;
+    display:flex;
+    flex-direction: column-reverse;
+
+}
+.imgtable{
+    margin-right: 20px;
+}
+
+li{
+    font-family: Fear2;
+    font-size: 20px;
+}
+
+.inf{
+    font-family: Fear2 ;
+    font-size: 40px;
+}
+table{
+    width: 100%;
+    font-family: Fear2;
+    height: 60%;
+    color:rgb(197, 208, 217);
+}
+
+
+.formularios{
+    background: linear-gradient(
+        50deg,
+        rgba(38, 29, 72, 0.91) 20%,
+        rgba(182, 178, 255, 0.032)
+        ),
+        url(img/Firma_demo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        margin-top: 100px;
+        padding: 50px;
+        width: 430px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;        
+}
+
+.formularios label{
+    font-size: 17px;
+    font-family: Fear2;
+        color: #ffffff;
+        margin-bottom: 10px;
+}
+.formularios h2{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: Fear;
+}
+
+input, textarea{
+    padding: 8px 10px;
+    background-color:#3d427f;
+    border: 1px solid rgba(115, 79, 176, 0.422);
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+:focus{
+    outline: 1px solid rgb(185, 155, 238);
+    transition: 0.7s;
+}
+
+.separador{
+    width: 1500px;
+    border: 2px solid #3d427f(58, 12, 150);
+    border-radius: 25px;
+    position:relative;
+
+}
