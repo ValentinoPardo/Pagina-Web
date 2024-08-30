@@ -1,4 +1,6 @@
-
+html {
+    cursor: url(img/ad.png ), auto;
+}
 header{
     display: flex;
     height: 100px;

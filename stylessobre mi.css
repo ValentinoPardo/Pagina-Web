@@ -1,4 +1,6 @@
-
+html {
+    cursor: url(img/ad.png ), auto;
+}
 header{
     display: flex;
     height: 100px;
@@ -135,5 +137,13 @@ input, textarea{
     border: 2px solid #3d427f(58, 12, 150);
     border-radius: 25px;
     position:relative;
+
+}
+
+.separador2{
+    width: 1500px;
+    border: 2px solid #3d427f(58, 12, 150);
+    border-radius: 25px;
+    position:fixed;
 
 }
