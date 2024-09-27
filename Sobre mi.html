@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlutGovel</title>
+    <title>V</title>
     <link rel="icon" href="img/Sm/1eeb.png" type="image/png">
     <link rel="stylesheet" href="stylessobre mi.css">
 </head>
+<body>
     <header> 
         <div class="logo"><img src="img/Sm/1s.png">
         </div>
@@ -18,12 +19,10 @@
         </a>
         </nav>
     </header>
-<body class="Sobremi">
+<div class="Sobremi">
+
     <div class="cv">
         <img class="cv_img"src="img/Sm/CV.png">
-    </div>
-    <div style="text-align: center;">
-    <img class="separador" src="img/Sm/Separador2.png">
     </div>
     
     <div class="influencias">
@@ -37,7 +36,7 @@
             </tread>
                     <tr>
                     <td><Img class="imgtable" width=200px src="img/Sm/inf_art1.jpg"></td>
-                    <td><a class="inf" target="_blank" href="https://es.wikipedia.org/wiki/Remedios_Varo">Remedios Varo.</a>
+                    <td class="info"><a class="inf" target="_blank" href="https://es.wikipedia.org/wiki/Remedios_Varo">Remedios Varo.</a>
                         <dl> 
                             <dt> Caracteristica de Obra </dt>
                             <dd> Enfoque sobre lo científico, místico, esotérico y mágico</dd>
@@ -47,7 +46,7 @@
                     </tr>
                     <tr>
                     <td><Img class="imgtable" width=200px src="img/Sm/inf_art2.jpg"></td>
-                    <td><a class="inf" target="_blank" href="https://www.instagram.com/diegoandradeart/">DiegoAndradeart.</a>
+                    <td class="info"><a class="inf" target="_blank" href="https://www.instagram.com/diegoandradeart/">DiegoAndradeart.</a>
                         <dl> 
                             <dt> Caracteristica de Obra </dt>
                             <dd> Enfoque en Calidad de Lineart, Composicion y Color </dd>
@@ -57,7 +56,7 @@
                     </tr>
                     <tr>
                     <td><Img class="imgtable" width=200px src="img/Sm/inf_art3.jpg"></td>
-                    <td><a class="inf" target="_blank" href="https://www.instagram.com/dead_seagull_/">dead_seagull_.</a>
+                    <td class="info"> <a class="inf" target="_blank" href="https://www.instagram.com/dead_seagull_/">dead_seagull_.</a>
                         <dl> 
                             <dt> Caracteristica de Obra </dt>
                             <dd> Enfoque En la Anatomia y su deconstruccion, diseño de Pesonajes y un manejo increible del color, </dd>
@@ -67,7 +66,7 @@
                     </tr>
                     <tr>
                     <td><Img class="imgtable" width=200px src="img/Sm/inf_art4.jpg"></td>
-                    <td> <a class="inf" href="https://www.instagram.com/emils.salmins/" target="_blank">emils.salmins.</a> 
+                    <td class="info"> <a class="inf" href="https://www.instagram.com/emils.salmins/" target="_blank">emils.salmins.</a> 
                         <dl> 
                             <dt> Caracteristica de Obra </dt>
                             <dd> Enfoque artistico inspirado en obras antiguas japonesas y el arte old school</dd>
@@ -75,28 +74,30 @@
                             <dd> Dibujante, Grabador(linoleo) y Tatuador </dd>
                     </dl></td>
                     </tr>
-            </div>
-            <div class="formularios">
-                <form>
-                    <h2>Formulario de Correo</h2>
-
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name">
                     
-                    <label for="email">Mail</label>
-                    <input type="email" name="email" id="email">
+            </table>
+    </div>
+    <div class="box">
+        <form id="formulario" class="formulario" align="center">
+            <h2>Registro de Usuario</h2>
 
-                    <label for="Coments">Comentarios</label>
-                    <textarea  name="Coments" id="Coments" cols="30" rows="5"></textarea>
-                    
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
+            <label for="name">Nombre Completo</label>
+            <input class="W" type="text" name="name" id="name"><br>
+
+            <label for="email">Mail</label>
+            <input class="W" type="email" name="email" id="email"><br>
+
+            <label for="nacimiento">Fecha de Nacimiento</label>
+            <input class="W" type="date" name="nacimiento" min="1900-01-01" max="2100-01-01"><br>
+
+            <label for="Coments">Comentarios</label>
+            <textarea class="W" name="Coments" id="Coments" cols="30" rows="5"></textarea><br>
+            
+            <button>Enviar</button>
 
             
-            <div>
-                <img class="Separador2" src="img/Sm/Separador2.png">
-            </div>
-
+        </form>
+    </div>
+</div>
 </body>
 </html>

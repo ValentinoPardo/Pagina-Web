@@ -1,0 +1,18 @@
+PRIMERAMENTE ME GUSTARÍA MEJORAR ALGUNOS ERRORES QUE TIENE LA PAGINA:
+haciéndola responsiva tanto para Monitores como para Celulares o Tablets .
+terminan de arreglar algunos errores de maquetación, como por ejemplo una imagen que no logro centrarla.
+Con ayuda de ChatGPT y Personas que prueben la pagina, mejorar la UX (experiencia de usuario).
+LUEGO DE ARREGLAR ESTAS CUESTIONES ME GUSTARÍA MEJORARLA CON COSAS COMO:
+Con ayuda de internet y ChatGPT Lograr crear la interfaz visual de las imágenes utilizando JavaScript, en donde se puede hacer zoom y recorrer las distintas versiones de los Dibujos, grabados, en el caso de los dibujos digitales hacer una versión mejorada en la que se puedan manejar 3 capas, Línea, Color y Boceto con un modificador de opacidad. 
+Hacer que el cuestionario Funcione.
+Remplazar el Lorem ipsum con texto
+Subir la Pagina a Internet a un servidor de alojamiento Web.
+Algunos degradados de colores sutiles para mantener la estética del diseño.
+Implementar un puntero personalizado.
+Animaciones de elementos al Scrollear, pasar con el mouse, o hacer click.
+ 
+
+DUDAS A DESPEJAR PARA MEJORAR EL TRABAJO:
+php?
+servidor de alojamiento?
+ 

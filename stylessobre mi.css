@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     cursor: url(img/ad.png ), auto;
 }
 header{
@@ -36,6 +37,11 @@ a{
 body { 
     background-color: rgb(26, 19, 45);
 }
+.Sobremi{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 @font-face {
     font-family: 'Fear';
     src:url(fonts/OzsWizard-Scarecrow.ttf);
@@ -49,10 +55,6 @@ body {
 
 }
 
-.cv{
-    justify-content:center;
-    display: flex;
-}
 .cv_img{
     width: 500px;
     margin: 30px;
@@ -61,19 +63,23 @@ body {
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.644);
 }
 
-.influencias{
-    padding: 60px 50% 60px 36%;
-    display:flex;
-    flex-direction: column-reverse;
-
-}
 .imgtable{
     margin-right: 20px;
+    width: 400px;
 }
 
-li{
-    font-family: Fear2;
-    font-size: 20px;
+dt{
+    font-size: x-large;
+}
+
+dd{
+    font-size: large;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inf{
@@ -87,32 +93,44 @@ table{
     color:rgb(197, 208, 217);
 }
 
-
-.formularios{
-    background: linear-gradient(
-        50deg,
-        rgba(38, 29, 72, 0.91) 20%,
-        rgba(182, 178, 255, 0.032)
-        ),
-        url(img/Firma_demo.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:contain;
-        margin-top: 100px;
-        padding: 50px;
-        width: 430px;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;        
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 1000px;
 }
 
-.formularios label{
+.formulario{
+        background: linear-gradient(
+            50deg,
+            rgba(185, 167, 219, 0.507) 20%,
+            rgba(42, 40, 60, 0.814)
+            );
+            /*url(img/Firma_demo.png);*/
+            box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.303);
+            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 40px;
+            width:100%;
+            border: 1px solid rgb(99, 66, 154);
+            border-radius: 25px;
+            display:flex;
+            flex-direction: column;    
+            
+    }
+
+        
+.formulario label{
+    display: flex;
     font-size: 17px;
     font-family: Fear2;
+    text-align:left;
         color: #ffffff;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
 }
-.formularios h2{
+.formulario h2{
     color: aliceblue;
     font-size: 25px;
     margin-bottom: 15px;
@@ -121,29 +139,111 @@ table{
 
 input, textarea{
     padding: 8px 10px;
-    background-color:#3d427f;
-    border: 1px solid rgba(115, 79, 176, 0.422);
+    background-color:#dacae062;
+    border: 1px solid rgba(223, 212, 255, 0.622);
     border-radius: 4px;
     margin-bottom: 3px;
 }
+.s{
+    width: 10px;
+    display:flex;
+}
 
 :focus{
-    outline: 1px solid rgb(185, 155, 238);
-    transition: 0.7s;
+    outline: 1px solid rgb(174, 128, 255);
+    transition: 0.5s;
 }
 
-.separador{
-    width: 1500px;
-    border: 2px solid #3d427f(58, 12, 150);
-    border-radius: 25px;
-    position:relative;
+.W{
+    color: #ffffff;
+}
+button
+{
+    background-color: #1a1531ba;
+    display: flex;
+    padding: 0.5em 0.7em;
+    color: #fff;
+    text-align: center;
+    border: 1px solid rgba(223, 212, 255, 0.434);
+    border-radius: 5px;
+    width:100%;
 
 }
+button:hover,
+buttont:focus{
+    border-color: rgb(249, 246, 255);
+    background-color: rgba(101, 255, 129, 0.644);
+    transition: 0.5s;
+}
 
-.separador2{
-    width: 1500px;
-    border: 2px solid #3d427f(58, 12, 150);
-    border-radius: 25px;
-    position:fixed;
+.password-flex{
+    display:flex;
+    flex-direction: row;
+}
+.password-flex input{
+    color: #ffffff;
+}
+.password-style{
+    width: 95%;
+    margin-right: 10px;
+}
 
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    background-color: #dacae062;
+    margin: 0;
+    margin-top: 7px;   
+    font: inherit;
+    color: rgba(211, 193, 193, 0.395);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid white;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    
+    display: grid;
+    place-content: center;
+    }
+    
+    input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: rgb(255, 255, 255);
+    }
+    
+    input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    }
+    
+    input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid rgb(174, 128, 255);
+    outline-offset: max(2px, 0.15em);
+    }
+
+@media (max-width: 850px){
+    .box{
+        width: 700px;
+    }
+}
+
+@media (max-width: 600px){
+    .box{
+        width:500px;
+    }
+}
+
+@media (max-width: 450px){
+    .box{
+        width:300px;
+    }
 }

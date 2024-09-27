@@ -1,5 +1,5 @@
 html {
-    cursor: url(img/ad.png ), auto;
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
@@ -35,64 +35,101 @@ body {
     background-color: #261b24;
 }
 .card_centrar{
-    align-items:center;
+    flex-direction: row;
     justify-content:center;
     display: flex;
+    width: 100%;
 }
+
+@media (max-width: 1000px){
+    .card_centrar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header{
+        justify-content:center;
+    }
+}
+
+@media (max-width: 391px){
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    nav a{
+        font-size: 13px;
+    }
+    .logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .logo{
+        width: 35%;
+    }
+    header {
+        height: 85px;
+    }
+}
+
 .card{
     display:inline-block;
     justify-content: center;
     box-shadow: 0px 0px 25px #0007;
-    width: 300px;
+    width: auto;
     margin: 20px;
     border: 3px solid #4a3558;
 }
 .digitales{
-    background: linear-gradient(rgba(2, 255, 74, 0), rgba(243, 243, 243, 0));
+    background: linear-gradient(rgba(82, 190, 113, 0), rgba(243, 243, 243, 0));
     text-align: center;
-    width: 300px;
+    width: auto;
 }
 .card_digitales_titulo{
     font-family: Future;
     font-size: 60px;
     color: rgb(255, 255, 255);
+    margin-top: 60px;
 }
 .card_digitales_desc{
     font-family: Fear2;
     font-size: 13;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-weight: 100;
 }
 .card_digitales_img{
-    width: 300px;
+    width: 100%;
 }
 
 .tradicional{
     background: linear-gradient(rgba(255, 0, 191, 0), rgba(243, 243, 243, 0));
     text-align: center;
-    width: 300px;
+    width: auto;
 }
 .card_tradicional_titulo{
     font-family: Fear;
     font-size: 45px;
     color: rgb(255, 255, 255);
     margin-top: 80px;
+    
 }
 .card_tradicional_desc{
     font-family: Fear2;
     font-size: 13;
     color: aliceblue;
     font-weight: 100;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .card_tradicional_img{
-    width: 300px;
+    width: 100%;
 }
 
 
 .grabado{
     background: linear-gradient(rgba(133, 64, 4, 0), rgba(243, 243, 243, 0));
     text-align: center;
-    width: 300px;
+    width: auto;
 
 }
 .card_grabado_titulo{
@@ -108,7 +145,7 @@ body {
     font-weight: 100;
 }
 .card_grabado_img{
-    width: 300px;
+    width: 100%;
 }
 
 .pie-pag{
