@@ -36,11 +36,14 @@ a{
 
 body { 
     background-color: rgb(26, 19, 45);
+    width: 100%;
 }
 .Sobremi{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 @font-face {
     font-family: 'Fear';
@@ -230,20 +233,122 @@ input[type="checkbox"] {
     outline-offset: max(2px, 0.15em);
     }
 
-@media (max-width: 850px){
+.influencias2{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .cv_img{
+        width: 500px;
+    }
+    .influencias{
+        display: none;
+    }
+    .influencias2{
+        display: block;
+    }
+    .imgtable2{
+        width: 100%;
+        margin: 0;
+    }
+    .info2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inf2{
+        font-family: Fear2 ;
+        font-size: 40px;
+    }
     .box{
-        width: 700px;
+        width: 120%;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 530px){
+    .cv_img{
+        width: 400px;
+    }
+    .influencias{
+        display: none;
+    }
+    .influencias2{
+        display: block;
+    }
+    .imgtable2{
+        width: 100%;
+        margin: 0;
+    }
+    .info2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inf2{
+        font-family: Fear2 ;
+        font-size: 40px;
+    }
+}
+@media (max-width: 430px){
+    .cv_img{
+        width: 360px;
+        margin: 20px;
+        border: 2px solid #3d427f;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.644);
+    }
+    .influencias{
+        display: none;
+    }
+    .influencias2{
+        display: block;
+    }
+    .imgtable2{
+        width: 100%;
+        margin: 0;
+    }
+    .info2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inf2{
+        font-family: Fear2 ;
+        font-size: 40px;
+    }
     .box{
-        width:500px;
+        width: 80%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    nav a{
+        font-size: 13px;
+    }
+    .logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .logo{
+        width: 35%;
+    }
+    header {
+        height: 85px;
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 380px){
+    .cv_img{
+        width: 320px;
+    }
+}
+
+@media (max-width: 338px){
+    .cv_img{
+        width: 300px;
+    }
     .box{
-        width:300px;
+        width: 60%;
     }
 }
