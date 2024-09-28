@@ -78,12 +78,22 @@ body {
     box-shadow: 0px 0px 25px #0007;
     width: auto;
     margin: 20px;
-    border: 3px solid #4a3558;
+    transition: transform 2s;
 }
+.card:hover {
+    transform:  scale(1.01);
+}
+
 .digitales{
-    background: linear-gradient(rgba(82, 190, 113, 0), rgba(243, 243, 243, 0));
+    background: linear-gradient(rgba(162, 255, 108, 0), rgba(103, 184, 184, 0));
     text-align: center;
     width: auto;
+    transition: background 1s, box-shadow 1s, transform 1s;
+}
+.digitales:hover{
+    background: rgba(107, 241, 74, 0.753);
+    box-shadow: 0 0 10px rgba(107, 241, 74, 0.753);
+    transform:  scale(1.03);
 }
 .card_digitales_titulo{
     font-family: Future;
@@ -102,9 +112,15 @@ body {
 }
 
 .tradicional{
-    background: linear-gradient(rgba(255, 0, 191, 0), rgba(243, 243, 243, 0));
+    background: rgba(102, 41, 99, 0);
     text-align: center;
     width: auto;
+    transition: background 1s, box-shadow 1s, transform 1s;
+}
+.tradicional:hover{
+    background: rgba(102, 41, 99, 0.753);
+    box-shadow: 0 0 10px rgba(156, 62, 152, 0.856);
+    transform:  scale(1.03);
 }
 .card_tradicional_titulo{
     font-family: Fear;
@@ -127,10 +143,15 @@ body {
 
 
 .grabado{
-    background: linear-gradient(rgba(133, 64, 4, 0), rgba(243, 243, 243, 0));
+    background: rgba(0, 0, 0, 0);
     text-align: center;
     width: auto;
-
+    transition: background 1s, box-shadow 1s, transform 1s;
+}
+.grabado:hover{
+    background: rgba(184, 207, 51, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    transform:  scale(1.03);
 }
 .card_grabado_titulo{
     font-family: Fear;

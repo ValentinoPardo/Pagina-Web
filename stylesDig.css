@@ -36,7 +36,7 @@ nav a:hover{
 }
 
 .imgs{
-    width: 800px;
+    width: 1000px;
     border: 3px solid rgb(86, 54, 104);
     margin: 10px;
 }
@@ -80,6 +80,30 @@ body {
     font-weight: 900;
     font-style:normal;
 }
+
+@media (max-width: 1050px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .imgs{
+        width: 800px;
+        border: 3px solid rgb(86, 54, 104);
+        margin: 10px;
+    }
+    
+    .separador{
+        width: 700px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        border: 1px solid rgba(104, 34, 89, 0);
+    }
+}
+
 
 @media (max-width: 850px){
     .box{
@@ -172,6 +196,67 @@ body {
     }
 }
 @media (max-width: 430px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .imgs{
+        width: 350px;
+        border: 3px solid rgb(86, 54, 104);
+        margin: 10px;
+    }
+    
+    .separador{
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        border: 1px solid rgba(104, 34, 89, 0);
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    nav a{
+        font-size: 13px;
+    }
+    .logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .logo{
+        width: 35%;
+    }
+    header {
+        height: 85px;
+    }
+}
+@media (max-width: 380px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .imgs{
+        width: 320px;
+        border: 3px solid rgb(86, 54, 104);
+        margin: 10px;
+    }
+    
+    .separador{
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        border: 1px solid rgba(104, 34, 89, 0);
+    }
+}
+@media (max-width: 350px){
     .box{
         display: flex;
         flex-direction: column;
