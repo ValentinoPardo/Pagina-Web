@@ -30,21 +30,46 @@ a{
     text-decoration: none;
     font-family: Fear_bold ;
     color: #4a3558;   
+    cursor: url(img/ad2.png), auto;
 }
 body { 
     background-color: #261b24;
+    cursor: url(img/ad.png), auto;
 }
 .card_centrar{
+    display: flex;
     flex-direction: row;
     justify-content:center;
-    display: flex;
+    align-items: center;
     width: 100%;
+}
+@media (max-width: 1900) and (min-width: 1100) {
+    .card{
+        max-width: 80%;
+    }
+
+    header{
+        justify-content:center;
+    }
+}
+
+@media (max-width: 1100) and (min-width:1001) {
+    .card{
+        max-width: 80%;
+    }
+
+    header{
+        justify-content:center;
+    }
 }
 
 @media (max-width: 1000px){
     .card_centrar{
         flex-direction: column;
         align-items: center;
+    }
+    .card{
+        max-width: 900px;
     }
 
     header{
@@ -77,7 +102,7 @@ body {
     justify-content: center;
     box-shadow: 0px 0px 25px #0007;
     width: auto;
-    margin: 20px;
+    margin: 1vw;
     transition: transform 2s;
 }
 .card:hover {
@@ -91,8 +116,8 @@ body {
     transition: background 1s, box-shadow 1s, transform 1s;
 }
 .digitales:hover{
-    background: rgba(107, 241, 74, 0.753);
-    box-shadow: 0 0 10px rgba(107, 241, 74, 0.753);
+    background: rgba(107, 241, 74, 0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.753);
     transform:  scale(1.03);
 }
 .card_digitales_titulo{
@@ -118,8 +143,8 @@ body {
     transition: background 1s, box-shadow 1s, transform 1s;
 }
 .tradicional:hover{
-    background: rgba(102, 41, 99, 0.753);
-    box-shadow: 0 0 10px rgba(156, 62, 152, 0.856);
+    background: rgba(102, 41, 99, 0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.856);
     transform:  scale(1.03);
 }
 .card_tradicional_titulo{
@@ -150,7 +175,7 @@ body {
 }
 .grabado:hover{
     background: rgba(184, 207, 51, 0);
-    box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.664);
     transform:  scale(1.03);
 }
 .card_grabado_titulo{
@@ -170,6 +195,7 @@ body {
 }
 
 .pie-pag{
+    margin-top: 2vw;
     justify-content:center;
     align-items:center;
     display: flex;
