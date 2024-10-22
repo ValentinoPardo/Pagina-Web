@@ -85,6 +85,10 @@ dd{
     align-items: center;
 }
 
+a{
+    cursor: url(img/ad2.png), auto;
+}
+
 .inf{
     font-family: Fear2 ;
     font-size: 40px;
@@ -132,6 +136,7 @@ table{
     text-align:left;
         color: #ffffff;
         margin-bottom: 5px;
+        cursor: url(img/ad.png), auto;
 }
 .formulario h2{
     color: aliceblue;
@@ -140,12 +145,17 @@ table{
     font-family: Fear;
 }
 
+button{
+    cursor: url(img/ad2.png), auto;
+}
+
 input, textarea{
     padding: 8px 10px;
     background-color:#dacae062;
     border: 1px solid rgba(223, 212, 255, 0.622);
     border-radius: 4px;
     margin-bottom: 3px;
+    cursor: url(img/ad3.png), auto;
 }
 .s{
     width: 10px;
